@@ -20,7 +20,7 @@ try:
             print("This value is out of range! Exiting...")
         else:
             GPIO.output(dac, decimal2binary(n))
-            print(f"Success! Suggested voltage is {n/255*3.3}")
+            print(f"Success! Suggested voltage is {n/255*3.3 :.3f}")
             input("Type enter to exit the program ")
 
 except ValueError:

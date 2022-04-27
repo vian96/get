@@ -18,7 +18,7 @@ ax.set_ylim(0, 1.1 * max(data))
 
 ax.set_xlabel("Время, с")
 ax.set_ylabel("Напряжение, В")
-plt.title("Процесс заряда-разряда")
+plt.title("Процесс заряда-разряда", wrap = True)
 
 ax.minorticks_on()
 ax.grid(True)
